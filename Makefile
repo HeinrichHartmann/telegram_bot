@@ -12,3 +12,6 @@ push:
 
 dist:
 	poetry build
+
+install: dist
+	cd dist && pip install *.whl
